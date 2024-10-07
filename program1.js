@@ -19,8 +19,7 @@ const getTotalIsles = function (grid) {
 
   // Function to perform DFS and mark connected land as visited
   const dfs = (r, c) => {
-      // Check boundaries and whether the cell is land ('L')
-      if (r < 0 || c < 0 || r >= rows || c >= cols || grid[r][c] === 'W') {
+     'W') {
           return;
       }
 
