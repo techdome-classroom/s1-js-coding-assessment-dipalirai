@@ -18,7 +18,7 @@ const decodeTheRing = function (message, pattern) {
       return matchHelper(msgIdx, patIdx + 1) || (msgIdx < message.length && matchHelper(msgIdx + 1, patIdx));
     }
 
-    // If the current pattern character is '?', it must match exactly one character in the message
+   
     if (pattern[patIdx] === '?') {
       return msgIdx < message.length && matchHelper(msgIdx + 1, patIdx + 1);
     }
