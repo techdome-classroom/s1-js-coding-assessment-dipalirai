@@ -1,11 +1,11 @@
-const getTotalIsles = function (grid) {
+// const getTotalIsles = function (grid) {
 
 
-  // write your code here
+//   // write your code here
 
-};
+// };
 
-module.exports = getTotalIsles;
+// module.exports = getTotalIsles;
 
 
 
