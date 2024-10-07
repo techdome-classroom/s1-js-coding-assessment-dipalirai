@@ -22,8 +22,7 @@ const decodeTheRing = function (message, pattern) {
     if (pattern[patIdx] === '?') {
       return msgIdx < message.length && matchHelper(msgIdx + 1, patIdx + 1);
     }
-
-    // For normal characters, they must match exactly
+y
     if (msgIdx < message.length && pattern[patIdx] === message[msgIdx]) {
       return matchHelper(msgIdx + 1, patIdx + 1);
     }
