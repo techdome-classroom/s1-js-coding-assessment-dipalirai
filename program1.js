@@ -27,19 +27,19 @@ const getTotalIsles = function (grid) {
       // Mark the current cell as visited (change 'L' to 'W')
       grid[r][c] = 'W';
 
-      // Recursively visit all neighboring cells (up, down, left, right)
-      dfs(r - 1, c);  // Up
-      dfs(r + 1, c);  // Down
-      dfs(r, c - 1);  // Left
-      dfs(r, c + 1);  // Right
+     
+      dfs(r - 1, c);  
+      dfs(r + 1, c); 
+      dfs(r, c - 1);  
+      dfs(r, c + 1);  
   };
 
   
   for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
           if (grid[r][c] === 'L') {
-              islandCount++;  // Found a new island
-              dfs(r, c);  // Mark the whole island as visited
+              islandCount++;  
+              dfs(r, c); 
           }
       }
   }
