@@ -1,6 +1,6 @@
 const decodeTheRing = function (message, pattern) {
-  
-  // Helper function to recursively match the pattern to the message
+
+  / Helper function to recursively match the pattern to the message
   const matchHelper = (msgIdx, patIdx) => {
     // If both message and pattern are fully traversed, it's a match
     if (msgIdx >= message.length && patIdx >= pattern.length) {
