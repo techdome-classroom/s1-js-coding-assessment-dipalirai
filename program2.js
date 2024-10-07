@@ -11,9 +11,7 @@ const decodeTheRing = function (message, pattern) {
       return false;
     }
 
-    // If the current pattern character is '*', handle two possibilities:
-    // 1. '*' matches zero characters: move to the next pattern character
-    // 2. '*' matches one or more characters: move to the next message character but stay on '*'
+    
     if (pattern[patIdx] === '*') {
       return matchHelper(msgIdx, patIdx + 1) || (msgIdx < message.length && matchHelper(msgIdx + 1, patIdx));
     }
