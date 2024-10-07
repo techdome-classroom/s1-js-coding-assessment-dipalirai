@@ -24,7 +24,8 @@ const getTotalIsles = function (grid) {
           return;
       }
 
-      // Mark the current cell as visited (change 'L' to 'W')
+      
+    
       grid[r][c] = 'W';
 
      
