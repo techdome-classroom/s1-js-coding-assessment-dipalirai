@@ -2,7 +2,7 @@ const decodeTheRing = function (message, pattern) {
   
  
   const matchHelper = (msgIdx, patIdx) => {
-    // If both message and pattern are fully traversed, it's a match
+  
     if (msgIdx >= message.length && patIdx >= pattern.length) {
       return true;
     }
