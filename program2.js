@@ -28,7 +28,7 @@ const decodeTheRing = function (message, pattern) {
       return matchHelper(msgIdx + 1, patIdx + 1);
     }
 
-    // If none of the above conditions match, return false
+    
     return false;
   };
 
