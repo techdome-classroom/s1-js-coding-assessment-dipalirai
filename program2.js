@@ -6,7 +6,7 @@ const decodeTheRing = function (message, pattern) {
     if (msgIdx >= message.length && patIdx >= pattern.length) {
       return true;
     }
-    // If the pattern is exhausted but the message isn't, no match
+    
     if (patIdx >= pattern.length) {
       return false;
     }
